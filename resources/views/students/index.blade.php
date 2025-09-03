@@ -6,9 +6,24 @@
 </head>
 <body>
     <h2>Currently Available Students</h2>
+    <p>{{ $greeting }}</p>
 
     <ul>
-        <li>Student Here</li>
+        <li>
+            <a href="/students/{{$students[0]['id']}}">
+                {{ $students[0]['name'] }}
+            </a>
+        </li>
+        <li>
+            <a href="/students/{{$students[1]['id']}}">
+                {{ $students[1]['name'] }}
+            </a>
+        </li>
+         <li>
+            <a href="/students/{{$students[2]['id']}}">
+                {{ $students[2]['name'] }}
+            </a>
+        </li>
     </ul>
 </body>
 </html>
