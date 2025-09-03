@@ -8,7 +8,7 @@
     <h1>Welcome to the First Lesson</h1>
     <p>Click the button below to view the list of students</p>
 
-    <a href="" class="btn">
+    <a href="/students" class="btn">
         View Students
     </a>
 </body>
