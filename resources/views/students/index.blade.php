@@ -19,11 +19,6 @@
                 {{ $students[1]['name'] }}
             </a>
         </li>
-         <li>
-            <a href="/students/{{$students[2]['id']}}">
-                {{ $students[2]['name'] }}
-            </a>
-        </li>
     </ul>
 </body>
 </html>
