@@ -1,6 +1,9 @@
 <x-layout>
     <h2>Currently Available Students</h2>
-    <p>{{ $greeting }}</p>
+
+    @if($greeting == 'hello')
+        <p>Hi from inside the if statement</p>
+    @endif
 
     <ul>
       @foreach($students as $student)
