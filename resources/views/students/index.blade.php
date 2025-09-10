@@ -8,9 +8,9 @@
     <ul>
       @foreach($students as $student)
         <li>
-          <a href="/students/{{$student['id']}}">
-            View Details
-          </a>
+          <x-card href="/students/{{$student['id']}}" :highlight="$student['skill'] > 70">
+            <h3>{{ $student['name'] }}</h3>
+          </x-card>
         </li>
       @endforeach
     </ul>
