@@ -1,3 +1,17 @@
+## Current Styling on the Website
+
+
+<img width="1440" height="751" alt="Screenshot 2025-09-10 at 10 34 45 AM" src="https://github.com/user-attachments/assets/b0df490e-e2ae-47a1-a17d-a552c00d09a1" />
+<img width="1440" height="765" alt="Screenshot 2025-09-10 at 10 34 55 AM" src="https://github.com/user-attachments/assets/27fc74fb-7d92-4a72-8cae-740e110e27ed" />
+<img width="1440" height="682" alt="Screenshot 2025-09-10 at 10 35 02 AM" src="https://github.com/user-attachments/assets/e921858a-c82e-4017-ac0f-a7c475919f58" />
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
