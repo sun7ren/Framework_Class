@@ -1,24 +1,14 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Network | Home</title>
-</head>
-<body>
+<x-layout>
     <h2>Currently Available Students</h2>
     <p>{{ $greeting }}</p>
 
     <ul>
+      @foreach($students as $student)
         <li>
-            <a href="/students/{{$students[0]['id']}}">
-                {{ $students[0]['name'] }}
-            </a>
+          <a href="/students/{{$student['id']}}">
+            View Details
+          </a>
         </li>
-        <li>
-            <a href="/students/{{$students[1]['id']}}">
-                {{ $students[1]['name'] }}
-            </a>
-        </li>
+      @endforeach
     </ul>
-</body>
-</html>
+</x-layout>
