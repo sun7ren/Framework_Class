@@ -6,19 +6,20 @@
 </head>
 <body>
     <h2>Currently Available Students</h2>
-    <p>{{ $greeting }}</p>
+
+    @if($greeting == 'hello')
+        <p>Hi from inside the if statement</p>
+    @endif
 
     <ul>
-        <li>
-            <a href="/students/{{$students[0]['id']}}">
-                {{ $students[0]['name'] }}
-            </a>
-        </li>
-        <li>
-            <a href="/students/{{$students[1]['id']}}">
-                {{ $students[1]['name'] }}
-            </a>
-        </li>
+        @foreach($students as $student)
+            <li>
+                <p>{{ $student['name'] }}</p>
+                <a href="/students/{{$student['id']}}">
+                    View Details
+                </a>
+            </li>
+        @endforeach
     </ul>
 </body>
 </html>
