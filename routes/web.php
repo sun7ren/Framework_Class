@@ -1,19 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/students', function(){
-    $students = [
-        ["name" => "arini", "skill" => 90, "id" => "1"],
-        ["name" => "nur", "skill" => 80, "id" => "2"],
-    ];
-
-    return view('students.index', ["greeting" => "hello", "students" => $students]);
-});
+Route::get('/students', [StudentController::class, 'index']);
 
 Route::get('/students/create', function(){
     return view('students.create');
