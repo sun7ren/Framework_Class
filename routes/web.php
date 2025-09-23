@@ -9,11 +9,6 @@ Route::get('/', function () {
 
 Route::get('/students', [StudentController::class, 'index']);
 
-Route::get('/students/create', function(){
-    return view('students.create');
-});
+Route::get('/students/create', [StudentController::class, 'create']);
 
-Route::get('/students/{id}', function($id){
-    return view('students.show', ["id" => $id]);
-});
-
+Route::get('/students/{id}', [StudentController::class, 'show']);

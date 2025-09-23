@@ -14,15 +14,18 @@ class StudentController extends Controller
     }
 
     public function show($id) {
+        $student = Student::findOrFail($id);
 
+        return view('students.show', ["student" => $student]);
     }
 
     public function create() {
-
+        
+        return view('students.create');
     }
 
     public function store(){
-
+        
     }
 
     public function destroy($id){
