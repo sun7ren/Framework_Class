@@ -10,8 +10,8 @@
     <header>
         <nav>
             <h1>Student Class</h1>
-            <a href="/students">All Students</a>
-            <a href="/students/create">Create New Students</a>
+            <a href="{{ route('students.index')}}">All Students</a>
+            <a href="{{ route('students.create')}}">Create New Students</a>
         </nav>
     </header>
 
