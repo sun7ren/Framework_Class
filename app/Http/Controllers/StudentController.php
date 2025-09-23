@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function index() {
-        $students = Student::orderBy('created_at', 'desc')->get();
+        $students = Student::orderBy('created_at', 'desc')->paginate(10);
 
         return view('students.index', ["students" => $students]);
     }
@@ -25,7 +25,7 @@ class StudentController extends Controller
     }
 
     public function store(){
-        
+
     }
 
     public function destroy($id){
