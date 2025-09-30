@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use App\Models\Classroom;
 
 class StudentController extends Controller
 {
@@ -20,8 +21,9 @@ class StudentController extends Controller
     }
 
     public function create() {
-        
-        return view('students.create');
+        $classrooms = Classroom::all();
+
+        return view('students.create', ['classrooms' => $classrooms]);
     }
 
     public function store(){
