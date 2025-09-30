@@ -31,7 +31,7 @@ ul {
   @apply my-10;
 }
 p {
-  @apply text-black bg-yellow-50;
+  @apply text-black;
 }
 
 /* header */

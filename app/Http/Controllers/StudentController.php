@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     public function index() {
-        $students = Student::orderBy('created_at', 'desc')->paginate(10);
+        $students = Student::with('classroom')->orderBy('created_at', 'desc')->paginate(10);
 
         return view('students.index', ["students" => $students]);
     }
 
     public function show($id) {
-        $student = Student::findOrFail($id);
+        $student = Student::with('classroom')->findOrFail($id);
 
         return view('students.show', ["student" => $student]);
     }
