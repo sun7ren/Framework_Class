@@ -26,8 +26,17 @@ class StudentController extends Controller
         return view('students.create', ['classrooms' => $classrooms]);
     }
 
-    public function store(){
+    public function store(Request $request){
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'skill' => 'required|integer|min:0|max:100',
+            'bio' => 'required|string|min:20|max:1000',
+            'classroom_id' => 'required|exists:classrooms,id',
+        ]);
 
+        Student::create($validated);
+
+        return redirect()->route('students.index')->with('success', 'Student created successfully!');
     }
 
     public function destroy($id){

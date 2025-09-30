@@ -1,5 +1,5 @@
 <x-layout>
-  <form action="" method="">
+  <form action="{{ route('students.store') }}" method="POST">
     <!-- CSRF token for security -->
     @csrf
 
@@ -44,8 +44,15 @@
     </select>
 
     <button type="submit" class="btn mt-4">Create Student</button>
-
-    <!-- validation errors -->
+    @if ($errors->any())
+    <div class="text-red-600 my-4">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     
   </form>
 </x-layout>
