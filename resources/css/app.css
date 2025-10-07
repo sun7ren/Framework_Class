@@ -1,4 +1,7 @@
-@import 'tailwindcss';
+/* @import 'tailwindcss'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -51,7 +54,7 @@ form {
   @apply max-w-screen-sm;
 }
 input, select, textarea {
-  @apply block w-full mt-2 mb-4 p-2 bg-white border-1 border-green-600;
+  @apply block w-full mt-2 mb-4 p-2 bg-white border border-green-600;
 }
 
 /* custom classes */

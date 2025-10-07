@@ -17,6 +17,12 @@
             <h1>Student Class</h1>
             <a href="{{ route('students.index')}}">All Students</a>
             <a href="{{ route('students.create')}}">Create New Students</a>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="btn hover:bg-red-700 text-green-700 p-2">
+                    Logout
+                </button>
+            </form>
         </nav>
     </header>
 
