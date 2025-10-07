@@ -43,6 +43,6 @@ class StudentController extends Controller
         $student = Student::findOrFail($id);
         $student->delete();
 
-        return redirect()->route('students.index');
+        return redirect()->route('students.index')->with('success', 'Student data Deleted!');
     }
 }
