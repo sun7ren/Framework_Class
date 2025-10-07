@@ -1,6 +1,14 @@
 ## Current Styling on the Website
 
+### As of Week 07
+<img width="1440" height="815" alt="Screenshot 2025-10-08 at 12 17 28 AM" src="https://github.com/user-attachments/assets/c745d9d9-cb5f-4659-96b3-af4b83db9639" />
+<img width="1440" height="808" alt="Screenshot 2025-10-08 at 12 17 16 AM" src="https://github.com/user-attachments/assets/dc432de9-7c41-4a0f-9980-5236bf637732" />
+<img width="1440" height="809" alt="Screenshot 2025-10-08 at 12 17 02 AM" src="https://github.com/user-attachments/assets/370697a9-b439-4af3-9f9c-4023419c338a" />
+<img width="1440" height="813" alt="Screenshot 2025-10-08 at 12 17 41 AM" src="https://github.com/user-attachments/assets/78fe32bd-3941-4501-9822-b73c5a47b49e" />
+<img width="1440" height="813" alt="Screenshot 2025-10-08 at 12 17 53 AM" src="https://github.com/user-attachments/assets/53067e84-9eaa-439d-830d-60f1e95f469a" />
 
+
+### Previously
 <img width="1319" height="708" alt="Screenshot 2025-09-30 at 11 06 09 PM" src="https://github.com/user-attachments/assets/ea5bcb55-f02f-489f-b862-b76250ac9b71" />
 
 <img width="1440" height="682" alt="Screenshot 2025-09-10 at 10 35 02 AM" src="https://github.com/user-attachments/assets/e921858a-c82e-4017-ac0f-a7c475919f58" />
