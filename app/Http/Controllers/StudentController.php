@@ -14,8 +14,8 @@ class StudentController extends Controller
         return view('students.index', ["students" => $students]);
     }
 
-    public function show($id) {
-        $student = Student::with('classroom')->findOrFail($id);
+    public function show(Student $student) {
+        $student->load('classroom');
 
         return view('students.show', ["student" => $student]);
     }
@@ -39,8 +39,7 @@ class StudentController extends Controller
         return redirect()->route('students.index')->with('success', 'Student created successfully!');
     }
 
-    public function destroy($id){
-        $student = Student::findOrFail($id);
+    public function destroy(Student $student){
         $student->delete();
 
         return redirect()->route('students.index')->with('success', 'Student data Deleted!');
