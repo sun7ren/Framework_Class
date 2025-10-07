@@ -11,6 +11,7 @@
       type="text" 
       id="name" 
       name="name" 
+      value="{{ old ('name')}}"
       required
     >
 
@@ -20,6 +21,7 @@
       type="number" 
       id="skill" 
       name="skill" 
+      value="{{ old ('skill')}}"
       required
     >
 
@@ -30,20 +32,21 @@
       id="bio" 
       name="bio" 
       required
-    ></textarea>
+    >{{ old ('bio')}}"</textarea>
 
     <!-- select a classroom -->
     <label for="classroom_id">Classroom:</label>
     <select id="classroom_id" name="classroom_id" required>
       <option value="" disabled selected>Select a classroom</option>
       @foreach ($classrooms as $classroom)
-        <option value="{{ $classroom->id }}">
+        <option value="{{ $classroom->id }}" {{ $classroom->id == old('classroom_id') ? 'selected' : ''}}>
           {{ $classroom->name }}
         </option>
       @endforeach
     </select>
 
     <button type="submit" class="btn mt-4">Create Student</button>
+
     @if ($errors->any())
     <div class="text-red-600 my-4">
         <ul>
